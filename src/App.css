@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.App {
+  width: 500px;
+  height: 100vh;
+  background-color: #d6d4d4;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding: 5px;
+}
+
+.cal-promt {
+  background-color: #f0f0f0;
+  /* color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.input-btn {
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 50px;
+  box-shadow: -11px 10px 39px -16px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -11px 10px 39px -16px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -11px 10px 39px -16px rgba(0, 0, 0, 0.75);
+}
+
+.clear-btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calcualte-btn {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.output {
+  padding: 1rem;
+  font-size: 3.2rem;
+  line-height: 2.4rem;
+  height: 50%;
+  display: flex;
+}
+.cal-output {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.reslt-output {
+  align-self: flex-start;
+  justify-self: flex-start;
+  font-size: 6rem;
+  padding: 2rem 1rem;
+}
